@@ -7,7 +7,9 @@ const Header = () => {
   return (
     <div>
       <h1>this is header : {category}</h1>
-      <button onClick={() => setCategory(category + 1)}>Increament</button>
+      <button onClick={() => setCategory('laptop')}>Laptop</button>
+      <button onClick={() => setCategory('Phone')}>Phone</button>
+      <button onClick={() => setCategory('Camera')}>Camera</button>
     </div>
   );
 };
