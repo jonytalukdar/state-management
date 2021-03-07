@@ -10,10 +10,9 @@ function App() {
   const [count, setCount] = useState(0);
 
   return (
-    <CatagoryContext.Provider value={count}>
-      <p>Count : {count}</p>
-      <Header count={count} setCount={setCount}></Header>
-      <Home count={count}></Home>
+    <CatagoryContext.Provider value={[count, setCount]}>
+      <Header></Header>
+      <Home></Home>
       <Shipment></Shipment>
     </CatagoryContext.Provider>
   );
