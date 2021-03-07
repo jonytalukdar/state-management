@@ -7,10 +7,10 @@ import Shipment from './components/shipment/Shipment';
 export const CatagoryContext = createContext();
 
 function App() {
-  const [count, setCount] = useState(0);
+  const [category, setCategory] = useState(0);
 
   return (
-    <CatagoryContext.Provider value={[count, setCount]}>
+    <CatagoryContext.Provider value={[category, setCategory]}>
       <Header></Header>
       <Home></Home>
       <Shipment></Shipment>

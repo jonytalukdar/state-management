@@ -2,11 +2,11 @@ import React, { useContext } from 'react';
 import { CatagoryContext } from '../../../App';
 
 const CategoriesDetail = () => {
-  const count = useContext(CatagoryContext);
+  const category = useContext(CatagoryContext);
   return (
     <div>
-      <h4>this is catagories details count : {count} </h4>
-      <p> catagory :{count}</p>
+      <h4>this is catagories details category : {category} </h4>
+      <p> catagory :{category}</p>
     </div>
   );
 };
